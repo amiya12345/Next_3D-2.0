@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { AiOutlineRight,
-   Aioutlineleft, } from "react-icons/ai";
 import Webi from "../public/assets/works/webi.webp";
 import Webii from "../public/assets/works/webi1.webp";
 import Webiii from "../public/assets/works/webii.webp";
