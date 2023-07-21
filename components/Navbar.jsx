@@ -59,11 +59,7 @@ const Navbar = () => {
             About
           </Link>
         </li>
-        <li className="ml-10 hover:text-sky-500">
-          <a href="https://drive.google.com/file/d/1QYavr3GQk9gEzY9dxjec9NN2zNrmeLyF" target="_blank" rel="noreferrer">
-            Resume
-          </a>
-        </li>
+       
       </ul>
 
       {/* Omio man burger */}
