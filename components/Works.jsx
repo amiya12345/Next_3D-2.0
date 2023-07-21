@@ -40,7 +40,7 @@ const Projects = () => {
             title="Typo"
             backgroundImg={Type}
             projectUrl="https://www.behance.net/gallery/142907041/36-Days-of-Typo"
-            target="_blank"
+
           />
         </div>
       </div>
