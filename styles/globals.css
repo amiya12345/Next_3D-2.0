@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "PPMonumentExtended-Black";
+  src: url("/fonts/PPMonumentExtended-Black.otf");
+}
+@font-face {
+  font-family: PPMonumentExtended-Regular;
+  src: url("/fonts/PPMonumentExtended-Regular.otf");
+}
+@font-face {
+  font-family: "PPMonumentExtended-Light";
+  src: url("/fonts/PPMonumentExtended-Light.otf");
+}
+
+#__next {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0B1120] text-[#E5E7EB] w-full h-full;
+  }
+  html {
+    @apply w-full h-full;
+  }
+  
+  
+}
