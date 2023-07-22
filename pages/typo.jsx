@@ -3,7 +3,7 @@ import React from "react";
 import Shap from "../public/assets/works/shape/shape.webp";
 import Shape1 from "../public/assets/works/shape/shapi1.webp"
 import Shape2 from "../public/assets/works/shape/shapi2.webp"
-import Shape3 from "../public/assets/works/shape/Shapi3.webp"
+import Shape3 from "../public/assets/works/shape/shapi3.webp"
 import Shape4 from "../public/assets/works/shape/shapi4.webp"
 import Shape5 from "../public/assets/works/shape/shapi5.webp"
 import Shape6 from "../public/assets/works/shape/shapi6.webp"
