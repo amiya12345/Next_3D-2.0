@@ -161,20 +161,21 @@
   resolved "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.1.3.tgz"
   integrity sha512-WiBSI6JBIhC6LRIsB2Kwh8DsGTlbBU+mLRxJmAe3LjHTdkDpwIbEOZgoXBbZilk/vlfjK8i6nKRAvIRn1XaIMw==
 
-"@splinetool/react-spline@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.npmjs.org/@splinetool/react-spline/-/react-spline-2.2.1.tgz"
-  integrity sha512-GDVYDEhYn9AjUbOWMpg2qIAtH3yYuw0itiG/lcNv5H1WZ5R3E3TjcNvyVou2td/16DW9m03N5cI/WVKGgsSFxg==
+"@splinetool/react-spline@^2.2.6":
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/@splinetool/react-spline/-/react-spline-2.2.6.tgz#c48f634f352311b9da210978f88bd195d605ee8a"
+  integrity sha512-y9L2VEbnC6FNZZu8XMmWM9YTTTWal6kJVfP05Amf0QqDNzCSumKsJxZyGUODvuCmiAvy0PfIfEsiVKnSxvhsDw==
   dependencies:
-    react-merge-refs "^1.1.0"
+    lodash.debounce "^4.0.8"
+    react-merge-refs "^2.0.1"
 
-"@splinetool/runtime@^0.9.61":
-  version "0.9.61"
-  resolved "https://registry.npmjs.org/@splinetool/runtime/-/runtime-0.9.61.tgz"
-  integrity sha512-7PHe4tCVNyeDpXK9domG86X86JrhMA/fw15EakwEctWc30A3l/GKIedmsU3zBix3D3fBNmQbynF2xQHLjrFWJg==
+"@splinetool/runtime@^0.9.393":
+  version "0.9.393"
+  resolved "https://registry.yarnpkg.com/@splinetool/runtime/-/runtime-0.9.393.tgz#7f79cc1419fa5c46df056fd1d482ac03f765f314"
+  integrity sha512-YJ2WuvzfeRAFzgsesbrD7+LTBee/GMcd49rMrQa2FwjuRaExazFWyvHIBRsftP4jbs0IyBFCSkAPityDBuClaA==
   dependencies:
     on-change "^4.0.0"
-    yoctodelay "^2.0.0"
+    semver-compare "^1.0.0"
 
 "@swc/helpers@0.4.11":
   version "0.4.11"
@@ -1695,10 +1696,10 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-merge-refs@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/react-merge-refs/-/react-merge-refs-1.1.0.tgz"
-  integrity sha512-alTKsjEL0dKH/ru1Iyn7vliS2QRcBp9zZPGoWxUOvRGWPUYgjo+V01is7p04It6KhgrzhJGnIj9GgX8W4bZoCQ==
+react-merge-refs@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-2.0.2.tgz#73f576111124897dec4ea56035a97e199e8cb377"
+  integrity sha512-V5BGTwGa2r+/t0A/BZMS6L7VPXY0CU8xtAhkT3XUoI1WJJhhtvulvoiZkJ5Jt9YAW23m4xFWmhQ+C5HwjtTFhQ==
 
 react-tilt@^0.1.4:
   version "0.1.4"
@@ -1794,6 +1795,11 @@ scheduler@^0.23.0:
   integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
   dependencies:
     loose-envify "^1.1.0"
+
+semver-compare@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/semver-compare/-/semver-compare-1.0.0.tgz#0dee216a1c941ab37e9efb1788f6afc5ff5537fc"
+  integrity sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==
 
 semver@^6.3.0:
   version "6.3.0"
@@ -2069,8 +2075,3 @@ yaml@^1.10.2:
   version "1.10.2"
   resolved "https://registry.npmjs.org/yaml/-/yaml-1.10.2.tgz"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
-
-yoctodelay@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/yoctodelay/-/yoctodelay-2.0.0.tgz"
-  integrity sha512-0m1YaiUEnEPrZ7mKxkfRpPLfOjG1GeWd2E2IfB8toIUEhXjk5cW+czBDiQQkkMDycsuGDkG1dP40QQQoKJmEWw==

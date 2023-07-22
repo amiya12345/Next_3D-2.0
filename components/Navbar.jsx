@@ -88,9 +88,7 @@ const Navbar = () => {
           <Link
             href="/"
             onClick={handleClick}
-            smooth={true}
-            offset={0}
-            duration={700}
+            scroll={false}
           >
             Home
           </Link>
@@ -99,9 +97,7 @@ const Navbar = () => {
           <Link
             href="#works"
             onClick={handleClick}
-            smooth={true}
-            offset={0}
-            duration={700}
+            scroll={false}
           >
             Works
           </Link>
@@ -110,18 +106,14 @@ const Navbar = () => {
           <Link
             href="/"
             onClick={handleClick}
-            smooth={true}
-            offset={0}
-            duration={700}
+            scroll={false}
           >
             About
           </Link>
         </li>
         <li onClick={() => setNav(false)} className="py-3 text-2xl">
           <a
-            href="https://nft.wazirx.org/amiya_fury/created?sort=created-desc"
-            target="_blank"
-            rel="noreferrer"
+            href="https://drive.google.com/file/d/1QYavr3GQk9gEzY9dxjec9NN2zNrmeLyF" target="_blank" rel="noreferrer"
           >
             Resume
           </a>
