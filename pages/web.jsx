@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import Webi from "../public/assets/works/webi.webp";
-import Webii from "../public/assets/works/webi1.webp";
-import Webiii from "../public/assets/works/webii.webp";
-import Webiv from "../public/assets/works/webi12.webp";
-import Webv from "../public/assets/works/Webiii.webp";
-import Webvi from "../public/assets/works/webi13.webp";
-import Webvii from "../public/assets/works/webi14.webp";
-import Webviii from "../public/assets/works/webiv.webp"
+import Webi from "../public/assets/works/web/webi.webp";
+import Webii from "../public/assets/works/web/webi1.webp";
+import Webiii from "../public/assets/works/web/webi2.webp";
+import Webiv from "../public/assets/works/web/webi3.webp";
+import Webv from "../public/assets/works/web/webi4.webp";
+import Webvi from "../public/assets/works/web/webi5.webp";
+import Webvii from "../public/assets/works/web/webi6.webp";
+import Webviii from "../public/assets/works/web/webi7.webp"
 import Link from "next/link";
 import Hover from "react-3d-hover";
 import Navbar from "../components/Navbar";
@@ -77,7 +77,7 @@ const web = () => {
           <Hover scale={1.03} perspective={1000} speed={500}>
             <Image
               className="rounded"
-              src={Webiv}
+              src={Webiii}
               alt="/"
               quality="100"
               data-aos="fade-up"
@@ -90,7 +90,7 @@ const web = () => {
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
-              src={Webiii}
+              src={Webiv}
               alt="/"
               quality="100"
               data-aos="fade-up"
@@ -132,7 +132,7 @@ const web = () => {
           <Hover scale={1.03} perspective={1000} speed={500}>
             <Image
               className="rounded"
-              src={Webvi}
+              src={Webv}
               alt="/"
               quality="100"
               data-aos="fade-up"
@@ -145,7 +145,7 @@ const web = () => {
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
-              src={Webv}
+              src={Webvi}
               alt="/"
               quality="100"
               data-aos="fade-up"
