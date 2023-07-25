@@ -28,8 +28,8 @@ const typo = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0">
-          <h2 className="font-omiofont2 text-3xl lg:mx-24 mx-4">3D Cozy Room</h2>
-          <h3 className="font-omiofont2 text-1.5xl lg:mx-24 mx-4">Blender / 3D Design</h3>
+          <h2 className="font-omiofont2 lg:text-3xl lg:mx-24 mx-4 text-2xl">3D Cozy Room</h2>
+          <h3 className="font-omiofont lg:text-1.5xl lg:mx-24 mx-4 text-xl">Blender / 3D Design</h3>
           <h3 className="lg:mx-24 mx-4">Personal Project</h3>
         </div>
       </div>
@@ -155,17 +155,17 @@ Lighting and texture play a crucial role in enhancing the rooms ambiance. Warm c
           </Hover> 
         </div>
       </div>
-      <div className="max-w-[100%] lg:mx-24 mt-8">
-        <div className="grid lg:gap-12 md:grid-cols-2 gap-4">
+      <div className="max-w-[100%] lg:mx-24 mt-8 sm: mx-4">
+        <div className="grid grid-cols-2 lg:gap-12 sm:grid-cols-2 gap-4 ">
         
-         <div className="flex justify-start items-center">
+         <div className="flex justify-start items-center col-span-1">
           <Link href="/typo">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 ">Previous Project</p>
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Project</p>
         </Link>
         </div>
-        <div className="flex justify-end items-center">
-          <a href="https://www.behance.net/gallery/142907041/36-Days-of-Typo" rel="noreferrer" target="_blank">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 ">Next Project</p>
+        <div className="flex justify-end items-center col-span-1">
+        <a href="https://www.behance.net/gallery/142907041/36-Days-of-Typo" rel="noreferrer" target="_blank">
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Project</p>
         </a>
         </div>
       </div>

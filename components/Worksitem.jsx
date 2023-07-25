@@ -15,7 +15,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
             />
             <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
               <h3
-                className="text-2xl text-white tracking-wider text-center"
+                className="lg:text-2xl text-white tracking-wider text-center sm:text-xl sm:tracking-normal"
               
               >
                 {title}

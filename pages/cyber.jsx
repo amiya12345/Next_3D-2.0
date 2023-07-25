@@ -26,18 +26,18 @@ const typo = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0">
-          <h2 className="font-omiofont2 text-3xl lg:mx-24 mx-4">CyberPunk Art</h2>
-          <h3 className="font-omiofont2 text-1.5xl lg:mx-24 mx-4">Blender / Diorama</h3>
+          <h2 className="font-omiofont2 lg:text-3xl lg:mx-24 mx-4 text-2xl">CyberPunk Art</h2>
+          <h3 className="font-omiofont lg:text-1.5xl lg:mx-24 mx-4 text-xl">Blender / Diorama</h3>
           <h3 className="lg:mx-24 mx-4">Personal Project</h3>
         </div>
       </div>
 
       <div className="max-w-[100%] lg:mx-24  grid md:grid-cols-5 gap-8 pt-8 mx-4">
         <div className="col-span-6">
-          <h2 className="lg:text-3xl font-omiofont1 text-xl">
+          <h2 className="lg:text-3xl font-omiofont1 sm:text-xl">
             Project Overview
           </h2>
-          <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
+          <p className="lg:text-xl font-omiofont3 lg:mt-8 text-justify text-slate-400 mt-6 sm:tracking-tighter">
           The Cyberpunk Art and 3D Diorama project is an exciting endeavor that combines futuristic artwork and immersive dioramas. Inspired by cyberpunk themes,
            the project aims to create captivating digital art and miniature scenes that depict a world where technology and urban grit collide.
           </p>
@@ -125,17 +125,17 @@ const typo = () => {
           </Hover> 
         </div>
       </div>
-      <div className="max-w-[100%] lg:mx-24 mt-8">
-        <div className="grid lg:gap-12 md:grid-cols-2 gap-4">
+      <div className="max-w-[100%] lg:mx-24 mt-8 sm: mx-4">
+        <div className="grid grid-cols-2 lg:gap-12 sm:grid-cols-2 gap-4 ">
         
-         <div className="flex justify-start items-center">
+         <div className="flex justify-start items-center col-span-1">
           <Link href="/eth">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 ">Previous Project</p>
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Project</p>
         </Link>
         </div>
-        <div className="flex justify-end items-center">
+        <div className="flex justify-end items-center col-span-1">
           <Link href="/typo">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 ">Next Project</p>
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Project</p>
         </Link>
         </div>
       </div>

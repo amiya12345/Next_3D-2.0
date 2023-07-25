@@ -28,8 +28,8 @@ const typo = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0">
-          <h2 className="font-omiofont2 text-3xl lg:mx-24 mx-4">30 Days of Shapes</h2>
-          <h3 className="font-omiofont2 text-1.5xl lg:mx-24 mx-4">Blender / 3D Design</h3>
+          <h2 className="font-omiofont2 lg:text-3xl lg:mx-24 mx-4 text-2xl">30 Days of Shapes</h2>
+          <h3 className="font-omiofont lg:text-1.5xl lg:mx-24 mx-4 text-xl">Blender / 3D Design</h3>
           <h3 className="lg:mx-24 mx-4">Personal Project</h3>
         </div>
       </div>
@@ -151,17 +151,17 @@ const typo = () => {
           </Hover>
         </div>
       </div>
-      <div className="max-w-[100%] lg:mx-24 mt-8">
-        <div className="grid lg:gap-12 md:grid-cols-2 gap-4">
+      <div className="max-w-[100%] lg:mx-24 mt-8 sm: mx-4">
+        <div className="grid grid-cols-2 lg:gap-12 sm:grid-cols-2 gap-4 ">
         
-         <div className="flex justify-start items-center">
+         <div className="flex justify-start items-center col-span-1">
           <Link href="/cyber">
-          <div className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3  ">Previous Project</div>
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Project</p>
         </Link>
         </div>
-        <div className="flex justify-end items-center">
+        <div className="flex justify-end items-center col-span-1">
           <Link href="/room">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3  ">Next Project</p>
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Project</p>
         </Link>
         </div>
       </div>

@@ -12,7 +12,6 @@ import Link from "next/link";
 import Hover from "react-3d-hover";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { AiOutlineLeft } from "react-icons/ai";
 
 const web = () => {
   return (
@@ -29,18 +28,18 @@ const web = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0">
-          <h2 className="font-omiofont2 text-3xl lg:mx-24 mx-4">3D illustrataion</h2>
-          <h3 className="font-omiofont2 text-1.5xl lg:mx-24 mx-4">Blender / 3D UI</h3>
+          <h2 className="font-omiofont2 lg:text-3xl lg:mx-24 mx-4 text-2xl">3D illustrataion</h2>
+          <h3 className="font-omiofont lg:text-1.5xl lg:mx-24 mx-4 text-xl">Blender / 3D UI</h3>
           <h3 className="lg:mx-24 mx-4">Personal Project</h3>
         </div>
       </div>
 
       <div className="max-w-[100%] lg:mx-24  grid md:grid-cols-5 gap-8 pt-8 mx-4">
         <div className="col-span-6">
-          <h2 className="lg:text-3xl font-omiofont2 text-xl">
+          <h2 className="lg:text-3xl font-omiofont2 md:text-xl">
             Project Overview
           </h2>
-          <p className="font-omiofont3 lg:mt-8 text-justify text-slate-400 mt-6 tracking-wide">
+          <p className="font-omiofont3 lg:mt-8 text-justify text-slate-400 mt-6 tracking-wide md:text-xl">
           I created these 3D illustration for my portfolio using Blender. First, I built the layout with simple shapes and added more details by reusing the geometry. To improve the appearance, I used smooth shading with auto-smooth set at 180 degrees. Lastly, I applied materials to the shapes. The color palette was straightforward, and before finalizing it, 
           I did a quick iteration to select the best colors.
           </p>
@@ -157,17 +156,17 @@ const web = () => {
           </Hover>
         </div>
       </div>
-      <div className="max-w-[100%] lg:mx-24 mt-8">
-        <div className="grid lg:gap-12 md:grid-cols-2 gap-4">
+      <div className="max-w-[100%] lg:mx-24 mt-8 sm: mx-4">
+        <div className="grid grid-cols-2 lg:gap-12 sm:grid-cols-2 gap-4 ">
         
-         <div className="flex justify-start items-center">
+         <div className="flex justify-start items-center col-span-1">
           <Link href="/#work">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 ">Work</p>
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Work</p>
         </Link>
         </div>
-        <div className="flex justify-end items-center">
+        <div className="flex justify-end items-center col-span-1">
           <Link href="/eth">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3">Next Project</p>
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Project</p>
         </Link>
         </div>
       </div>
