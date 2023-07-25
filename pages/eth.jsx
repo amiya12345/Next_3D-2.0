@@ -30,15 +30,15 @@ const eth = () => {
       />
        <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0">
           <h2 className="font-omiofont2 lg:text-3xl lg:mx-24 mx-4 text-2xl">ETH Portals</h2>
-          <h3 className="font-omiofont lg:text-1.5xl lg:mx-24 mx-4 text-xl">Blender /NFT</h3>
-          <h3 className="lg:mx-24 mx-4">Personal Project</h3>
+          <h3 className="font-omiofont2 lg:text-1.5xl lg:mx-24 mx-4 text-xl">Blender /NFT</h3>
+          <h3 className=" font-omiofont2  lg:mx-24 mx-4">Personal Work</h3>
         </div>
     </div>
 
-      <div className="max-w-[100%] lg:mx-24  grid md:grid-cols-5 gap-8 pt-8 mx-4">
+      <div className="max-w-[100%] lg:mx-24 grid md:grid-cols-5 gap-8 pt-8 mx-4">
         <div className="col-span-6">
           <h2 className="lg:text-3xl font-omiofont1 text-xl">
-            Project Overview
+            Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
             ETH portal is a nft collection which tells a story of various portal like Magical eth portal, Sci-fi eth portal and pirate eth portal.
@@ -162,12 +162,12 @@ const eth = () => {
         
          <div className="flex justify-start items-center col-span-1">
           <Link href="/web">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Project</p>
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Work</p>
         </Link>
         </div>
         <div className="flex justify-end items-center col-span-1">
           <Link href="/cyber">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Project</p>
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
         </Link>
         </div>
       </div>

@@ -29,8 +29,8 @@ const web = () => {
         />
         <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0">
           <h2 className="font-omiofont2 lg:text-3xl lg:mx-24 mx-4 text-2xl">3D illustrataion</h2>
-          <h3 className="font-omiofont lg:text-1.5xl lg:mx-24 mx-4 text-xl">Blender / 3D UI</h3>
-          <h3 className="lg:mx-24 mx-4">Personal Project</h3>
+          <h3 className="font-omiofont2 lg:text-1.5xl lg:mx-24 mx-4 text-xl">Blender / 3D UI</h3>
+          <h3 className="font-omiofont2 lg:mx-24 mx-4">Personal Work</h3>
         </div>
       </div>
 
@@ -166,7 +166,7 @@ const web = () => {
         </div>
         <div className="flex justify-end items-center col-span-1">
           <Link href="/eth">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Project</p>
+          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
         </Link>
         </div>
       </div>
