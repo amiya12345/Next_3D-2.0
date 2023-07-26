@@ -37,7 +37,7 @@ const typo = () => {
           <h2 className="lg:text-3xl font-omiofont1 sm:text-xl">
             Overview
           </h2>
-          <p className="lg:text-xl tracking-tighter font-omiofont3 lg:mt-8 text-justify text-slate-400 mt-6 sm:tracking-tighter">
+          <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
           The Cyberpunk Art and 3D Diorama project is an exciting endeavor that combines futuristic artwork and immersive dioramas. Inspired by cyberpunk themes,
            the project aims to create captivating digital art and miniature scenes that depict a world where technology and urban grit collide.
           </p>

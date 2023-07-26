@@ -39,7 +39,7 @@ const web = () => {
           <h2 className="lg:text-3xl font-omiofont2 md:text-xl">
             Project Overview
           </h2>
-          <p className="font-omiofont3 lg:mt-8 text-justify text-slate-400 mt-6 tracking-wide md:text-xl">
+          <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
           I created these 3D illustration for my portfolio using Blender. First, I built the layout with simple shapes and added more details by reusing the geometry. To improve the appearance, I used smooth shading with auto-smooth set at 180 degrees. Lastly, I applied materials to the shapes. The color palette was straightforward, and before finalizing it, 
           I did a quick iteration to select the best colors.
           </p>
