@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>AR3D</title>
+        <title>AR3D-Portfolio of Amiya</title>
         <meta
           name="description"
           content="Designed & Develope By Amiya using Next.js and Tailwind"
