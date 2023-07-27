@@ -45,17 +45,17 @@ const Navbar = () => {
         className="hidden md:flex font-omiofont3 text-[16px] "
       >
         <li className="ml-10 hover:text-sky-500 font-omiofont3 ">
-          <Link href="/" smooth={true} offset={0} duration={500}> 
+          <Link href="/"> 
             Home
           </Link>
         </li>
         <li className="ml-10 hover:text-sky-500">
-          <Link href="/#works" smooth={true} offset={0} duration={500} scroll={false}>
+          <Link href="/#works"scroll={false}>
             Works
           </Link>
         </li>
         <li className="ml-10 hover:text-sky-500">
-          <Link href="/#about" smooth={true} offset={0} duration={500} scroll={false}>
+          <Link href="/#about" scroll={false}>
             About
           </Link>
         </li>
