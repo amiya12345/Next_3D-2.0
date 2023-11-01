@@ -38,7 +38,7 @@ const Main = () => {
           Amiya Ranjan
         </h1>
         <p className="lg:text-[24px] font-semibold py-3  max-w-3xl mx-auto text-nft lg:tracking-[8px] sm:text-[14px tracking-[4px]">
-          3D Generalist
+          Visual Designer | 3D Generalist
         </p>
       </motion.div>
       <div className="flex-1">
