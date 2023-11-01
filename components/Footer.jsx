@@ -7,6 +7,7 @@ import {
   AiOutlineTwitter,
   AiOutlineMail,
 } from "react-icons/ai";
+import Link from "next/link";
 
 const Footer = () => {
   return (
