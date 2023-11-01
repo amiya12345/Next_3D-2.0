@@ -89,7 +89,9 @@ const Footer = () => {
           <div className="sm:w-2/3 text-center py-6">
             <p className="text-sm text-nft font-bold mb-0 font-omiofont3">
               © 2022 Designed and Developed by
-              <span className="text-sky-500 ml-2">Amiya.</span>
+              <span className="text-sky-500 ml-2"> <Link href="/"> 
+            Amiya
+          </Link></span>
             </p>
           </div>
         </div>
