@@ -108,7 +108,7 @@ const Navbar = () => {
             Works
           </Link>
         </li>
-        <li className="ml-10 hover:text-sky-500">
+        <li className="ml-10 hover:text-sky-500 py-3 text-2xl">
           <Link href="/ai" scroll={false}>
             A.I
           </Link>
