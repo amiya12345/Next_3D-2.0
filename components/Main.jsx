@@ -26,7 +26,7 @@ const Main = () => {
               "Namaste!",
               "Bonjour!",
               "Ciao!",
-              "Konnichiwa!",
+             
             ]}
             typeSpeed={80}
             backSpeed={80}

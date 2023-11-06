@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+
 const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [nav, setNav] = useState(false);
@@ -52,6 +53,11 @@ const Navbar = () => {
         <li className="ml-10 hover:text-sky-500">
           <Link href="/#works"scroll={false}>
             Works
+          </Link>
+        </li>
+        <li className="ml-10 hover:text-sky-500">
+          <Link href="/ai" scroll={false}>
+            A.I
           </Link>
         </li>
         <li className="ml-10 hover:text-sky-500">
