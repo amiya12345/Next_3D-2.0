@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Ai0 from "../public/assets/works/ai/ai0.webp"
+import Ai0 from "../public/assets/works/ai/ai0.webp";
 import Ai1 from "../public/assets/works/ai/ai1.webp"
 import Ai2 from "../public/assets/works/ai/ai2.webp"
 import Ai3 from "../public/assets/works/ai/ai3.webp"
