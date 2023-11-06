@@ -48,8 +48,8 @@ const ai = () => {
             Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-          "When I have some extra time, I enjoy immersing myself in Midjourney and DALL-E. These platforms allow me to create unique pieces using AI prompts. Each artwork represents a distinctive journey into form and function, celebrating the beauty and marvels of the digital era. The colors are lively and striking, the lines flow smoothly, and the outcomes are frequently awe-inspiring.
-           From abstract designs to lifelike landscapes, AI-generated art is expanding our understanding of what is achievable."
+          When I have some extra time, I enjoy immersing myself in Midjourney and DALL-E. These platforms allow me to create unique pieces using AI prompts. Each artwork represents a distinctive journey into form and function, celebrating the beauty and marvels of the digital era. The colors are lively and striking, the lines flow smoothly, and the outcomes are frequently awe-inspiring.
+           From abstract designs to lifelike landscapes, AI-generated art is expanding our understanding of what is achievable.
           </p>
         </div>
       </div>
