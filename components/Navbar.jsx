@@ -108,6 +108,11 @@ const Navbar = () => {
             Works
           </Link>
         </li>
+        <li className="ml-10 hover:text-sky-500">
+          <Link href="/ai" scroll={false}>
+            A.I
+          </Link>
+        </li>
         <li onClick={() => setNav(false)} className="py-3 text-2xl">
           <Link
             href="/"
