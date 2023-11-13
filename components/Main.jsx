@@ -42,7 +42,7 @@ const Main = () => {
         </p>
       </motion.div>
       <div className="flex-1">
-        <Spline scene="https://draft.spline.design/FVM64koUf2EzKpCq/scene.splinecode" />
+        <Spline scene="https://draft.spline.design/l8F33h5T7d0N6k7k/scene.splinecode" />
       </div>
     </section>
   );
