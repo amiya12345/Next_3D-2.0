@@ -149,10 +149,10 @@
     lodash.debounce "^4.0.8"
     react-merge-refs "^2.0.1"
 
-"@splinetool/runtime@^0.9.393":
-  version "0.9.393"
-  resolved "https://registry.yarnpkg.com/@splinetool/runtime/-/runtime-0.9.393.tgz#7f79cc1419fa5c46df056fd1d482ac03f765f314"
-  integrity sha512-YJ2WuvzfeRAFzgsesbrD7+LTBee/GMcd49rMrQa2FwjuRaExazFWyvHIBRsftP4jbs0IyBFCSkAPityDBuClaA==
+"@splinetool/runtime@^0.9.493":
+  version "0.9.493"
+  resolved "https://registry.yarnpkg.com/@splinetool/runtime/-/runtime-0.9.493.tgz#99f941a637a440d652783bd54200e3e26ea2d32c"
+  integrity sha512-AaGGhZlcEEcDqVu0PMcLoAVvZVB2IJFp3ciwpbs86U7HtjBXiqNj2DpMqEhAcjNmoIATxbSU6ZeWGsp6hA+oRw==
   dependencies:
     on-change "^4.0.0"
     semver-compare "^1.0.0"
@@ -1690,6 +1690,11 @@ react-3d-hover@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/react-3d-hover/-/react-3d-hover-1.1.1.tgz"
   integrity sha512-4Y9pr/mtkC/dVAwY+nfG1sQXeunD/0VDf1io75G6t4GhfFes7vQxbzJua2+M9xdYzL+u3RXSPAM8bzVPjOaPDw==
+
+react-awesome-lightbox@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/react-awesome-lightbox/-/react-awesome-lightbox-1.8.1.tgz#94a9f82a64fe1c43e34dd962b69911d7860d63bd"
+  integrity sha512-E/0Y+D1PaD3blNtzsjwEE0WNo+Zu6V0x0kpuM2eR8XdHh+7Iz783UP47jA1m/XxaCpO7xuvzRiV8mbUceCij6g==
 
 react-dom@^18.2.0:
   version "18.2.0"

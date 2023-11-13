@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        omio: '#0B1120',
+        omio: '#010101',
         nft: '#e5e7eb'
       },
       fontFamily: {

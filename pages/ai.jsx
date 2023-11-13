@@ -22,12 +22,15 @@ import Hover from "react-3d-hover";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+
 const ai = () => {
   return (
+    
     <div className="w-full max-h-screen">
        <Navbar />
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
+    
         <Image
           className="absolute z-1"
           layout="fill"
@@ -280,6 +283,7 @@ const ai = () => {
         </Link>
         </div>
       </div>
+      
       </div>
       <Footer/>
     </div>

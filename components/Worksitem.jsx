@@ -7,7 +7,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
     <Link href={projectUrl}>
       <div className="w-full">
         <div className="max-w-full mx-auto">
-          <div className="relative flex items-center justify-center h-[100%] w-full shadow-xl group transition-all  ease-[cubic-bezier(0,.75,1,.2)] delay-75 hover:bg-slate-900 duration-2000">
+          <div className="relative flex items-center justify-center h-[100%] w-full shadow-xl group transition-all  ease-[cubic-bezier(0,.75,1,.2)] delay-75 hover:bg-[#010101] duration-2000">
             <Image
               className="group-hover:opacity-10 cursor-pointer"
               src={backgroundImg}

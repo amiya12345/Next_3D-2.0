@@ -30,7 +30,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#0B1120] text-[#E5E7EB] w-full h-full;
+    @apply bg-[#010101] text-[#E5E7EB] w-full h-full;
   }
   html {
     @apply w-full h-full;
