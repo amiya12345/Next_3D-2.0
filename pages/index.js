@@ -10,7 +10,7 @@ export default function Home() {
 return (
 <>
 <Head>
-<Script src="https://www.googletagmanager.com/gtag/js?id=G-XXT8KNHF8C" />
+
 
 <title>AR3D-Portfolio of Amiya</title>
 <meta
@@ -23,6 +23,7 @@ content = "Designed & Develope By Amiya using Next.js and Tailwind"
 
 
 <div className = "min-h-screen w-screen scroll-smooth">
+<Script src="https://www.googletagmanager.com/gtag/js?id=G-XXT8KNHF8C" />
 
       <Script id="google-analytics">
         {`
