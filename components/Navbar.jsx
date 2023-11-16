@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
-import useAnalyticsEventTracker from '../pages/useAnalyticsEventTracker';
 
 
 

@@ -6,35 +6,34 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        
-        <title>AR3D-Portfolio of Amiya</title>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BTMHTX0VE"></script>
-        <meta
-          name="description"
-          content="Designed & Develope By Amiya using Next.js and Tailwind"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+return (
+<>
+<Head>
+
+<title>AR3D-Portfolio of Amiya</title>
+<meta
+name    = "description"
+content = "Designed & Develope By Amiya using Next.js and Tailwind"
+/>
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+<link rel  = "icon" href        = "/favicon.ico" />
+</Head>
 
 
-      <div className="min-h-screen w-screen scroll-smooth">
-      <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() dataLayer.push(arguments);
-  gtag('js', new Date());
-
-  gtag('config', 'G-1BTMHTX0VE');
+<div className = "min-h-screen w-screen scroll-smooth">
+<script>
+window.ga = window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l = +new Date;
+ga('create', 'UA-181824713-1', 'auto');
+ga('send', 'pageview');
 </script>
-        <Navbar />
-        <Main />
-        <Works />
-        <About />
-        <Footer/>
-      </div>
-    </>
-  );
+<script async src = 'https://www.google-analytics.com/analytics.js'></script>
+
+<Navbar />
+<Main />
+<Works />
+<About />
+<Footer/>
+</div>
+</>
+);
 }
