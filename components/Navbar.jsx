@@ -42,7 +42,10 @@ const Navbar = () => {
         style={{ color: `${textColor}` }}
         className="text-[16px] font-omiofont3"
       >
+        <Link href="/">
         AR.
+        </Link>
+        
       </div>
       <ul
         style={{ color: `${textColor}` }}
