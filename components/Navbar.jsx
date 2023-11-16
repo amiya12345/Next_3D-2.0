@@ -28,7 +28,7 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", changeColor);
   }, []);
-  const gaEventTracker = useAnalyticsEventTracker('Navbar');
+
   return (
     <div
       style={{ backgroundColor: `${color}` }}
@@ -69,7 +69,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="ml-10 hover:text-sky-500">
-          <a href="https://drive.google.com/file/d/1261Z7_NninDToDZ5b5TWWaHwkPACxK5O" target="_blank" rel="noreferrer "onClick={()=>gaEventTracker('resume')}>
+          <a href="https://drive.google.com/file/d/1261Z7_NninDToDZ5b5TWWaHwkPACxK5O" target="_blank" rel="noreferrer ">
             Resume
           </a>
         </li>
@@ -127,7 +127,7 @@ const Navbar = () => {
         </li>
         <li onClick={() => setNav(false)} className="py-3 text-2xl">
           <a
-            href="https://drive.google.com/file/d/1261Z7_NninDToDZ5b5TWWaHwkPACxK5O" target="_blank" rel="noreferrer" onClick={()=>gaEventTracker('resume')}
+            href="https://drive.google.com/file/d/1261Z7_NninDToDZ5b5TWWaHwkPACxK5O" target="_blank" rel="noreferrer" 
           >
             Resume
           </a>
