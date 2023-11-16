@@ -4,6 +4,7 @@ import Works from "../components/Works";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import Script from 'next/script'
 
 export default function Home() {
 return (
@@ -21,12 +22,14 @@ content = "Designed & Develope By Amiya using Next.js and Tailwind"
 
 
 <div className = "min-h-screen w-screen scroll-smooth">
-<script>
-window.ga = window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l = +new Date;
-ga('create', 'UA-181824713-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src = 'https://www.google-analytics.com/analytics.js'></script>
+<Script id="google-analytics">
+        {`
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'UA-181824713-1', 'auto');
+          ga('send', 'pageview');
+        `}
+      </Script>
+      <Script src="https://www.google-analytics.com/analytics.js" />
 
 <Navbar />
 <Main />
