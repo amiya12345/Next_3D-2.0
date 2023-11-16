@@ -25,7 +25,7 @@ content = "Designed & Develope By Amiya using Next.js and Tailwind"
 <Script id="google-analytics">
         {`
           window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', 'UA-181824713-2', 'auto');
+          ga('create', 'G-XXT8KNHF8C', 'auto');
           ga('send', 'pageview');
         `}
       </Script>
