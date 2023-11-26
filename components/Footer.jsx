@@ -32,7 +32,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2 px-4">
                   <a
-                    href="mailto:amiyaranjan.desigm@gmail.com"
+                    href="mailto:amiyaranjansethi0551@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                     className="text-nft text-md hover:text-sky-500"
