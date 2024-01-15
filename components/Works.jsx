@@ -7,9 +7,10 @@ import Webi from "../public/assets/works/web/webi.webp";
 import Cybr from "../public/assets/works/cyber/cyber.webp";
 import WorksItem from "./Worksitem";
 
+
 const Projects = () => {
   return (
-    <div id="works" className="w-full font-omiofont2">
+    <section id="works" className="w-full font-omiofont2">
       <div className=" py-16 ">
         <div className="grid md:grid-cols-2">
           <WorksItem
@@ -42,9 +43,12 @@ const Projects = () => {
             projectUrl="https://www.behance.net/gallery/142907041/36-Days-of-Typo"
 
           />
+      
         </div>
+       
       </div>
-    </div>
+      
+    </section>
   );
 };
 
