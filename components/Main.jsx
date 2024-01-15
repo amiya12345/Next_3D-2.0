@@ -17,9 +17,9 @@ const Main = () => {
         animate={{ opacity: 1, y: -10 }}
         transition={{ delay: 1, duration: 2.5, type: "spring" }}
       >
-        <p className="text-[32px] font-bold  max-w-3xl mx-auto text-nft">
+        <p className=" font-omiofont2 lg:text-[24px] text-[16px] mx-auto text-nft">
           <Typed
-            className="lg:font-bold lg:text-[32px] sm:text-[16px] sm:font-semibold text-center max-w-3xl mx-auto text-nft"
+            className=" font-omiofont2 lg:text-[24px] text-[16px]  text-center mx-auto text-nft"
             strings={[
               "Hello!",
               "Hola!",
@@ -34,10 +34,10 @@ const Main = () => {
           />
           I am
         </p>
-        <h1 className=" font-semibold text-3xl lg:text-6xl lg:tracking-[12px]  text-center text-nft  font-omiofont1  sm:text-3xl tracking-[2px]">
+        <h1 className="font-omiofont2 indent-0.5  text-3xl uppercase lg:text-6xl lg:tracking-[24px]  text-center text-nft sm:text-3xl tracking-[8px]">
           Amiya Ranjan
         </h1>
-        <p className="lg:text-[24px] font-semibold py-3  max-w-3xl mx-auto text-nft lg:tracking-[8px] sm:text-[14px tracking-[4px]">
+        <p className="font-omiofont2 text-center lg:text-[16px] uppercase py-3 mx-auto text-nft lg:tracking-[12px] text-[12px] tracking-[4px]">
           Visual Designer | 3D Generalist
         </p>
       </motion.div>
