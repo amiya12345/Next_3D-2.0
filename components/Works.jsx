@@ -28,9 +28,9 @@ const Projects = () => {
             backgroundImg={Cybr}
             projectUrl="/cyber"
           />
-          <WorksItem title="Shapes" 
-          backgroundImg={Shape} 
-          projectUrl="/typo" 
+          <WorksItem title="Shapes"
+            backgroundImg={Shape}
+            projectUrl="/typo"
           />
           <WorksItem
             title="Room"
@@ -43,11 +43,11 @@ const Projects = () => {
             projectUrl="https://www.behance.net/gallery/142907041/36-Days-of-Typo"
 
           />
-      
+
         </div>
-       
+
       </div>
-      
+
     </section>
   );
 };

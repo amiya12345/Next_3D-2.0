@@ -19,7 +19,7 @@ const Navbar = () => {
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor("#010101");
+        setColor("#000000");
         setTextColor("#E5E7EB");
       } else {
         setColor("transparent");
@@ -43,21 +43,21 @@ const Navbar = () => {
         className="text-[16px] font-omiofont3"
       >
         <Link href="/">
-        AR.
+          AR.
         </Link>
-        
+
       </div>
       <ul
         style={{ color: `${textColor}` }}
         className="hidden md:flex font-omiofont3 text-[16px] "
       >
         <li className="ml-10 hover:text-sky-500 font-omiofont3 ">
-          <Link href="/"> 
+          <Link href="/">
             Home
           </Link>
         </li>
         <li className="ml-10 hover:text-sky-500">
-          <Link href="/#works"scroll={false}>
+          <Link href="/#works" scroll={false}>
             Works
           </Link>
         </li>
@@ -130,7 +130,7 @@ const Navbar = () => {
         </li>
         <li onClick={() => setNav(false)} className="py-3 text-2xl">
           <a
-            href="https://drive.google.com/file/d/1261Z7_NninDToDZ5b5TWWaHwkPACxK5O" target="_blank" rel="noreferrer" 
+            href="https://drive.google.com/file/d/1261Z7_NninDToDZ5b5TWWaHwkPACxK5O" target="_blank" rel="noreferrer"
           >
             Resume
           </a>

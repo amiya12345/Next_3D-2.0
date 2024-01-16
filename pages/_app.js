@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     AOS.init();
   }, []);
 
- 
+
   <Navbar />
   return <Component {...pageProps} />;
 }

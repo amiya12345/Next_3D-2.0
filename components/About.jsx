@@ -16,33 +16,33 @@ const About = () => {
         </div>
       </div>
       <div className="max-w-full w-full grid lg:px-8 sm:grid-cols-2 gap-8 px-8  rounded-md">
-          <Hover scale={1.05} perspective={900} speed={900}>
+        <Hover scale={1.05} perspective={900} speed={900}>
           <Image
-              className="rounded"
-              src={Aboutm}
-              alt="/"
-              quality="100"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            />
-          </Hover>
-          <div className="flex">
-            <p className="font-omiofont3 lg:text-[16px] sm:text-[12px] leading-loose lg:tracking-[2px] sm:tracking-[1px]">
-              I’m a Digital Product Designer, with a constant obsession to inject
-              uniqueness & delight into all my crafts. I’ve minted and sold NFTs
-              involving 3D animations on various NFT marketplace. Lately, I’ve
-              attained some knowledge in coding, mainly front-end development &
-              I’m intrigued by the possibilities offered by Visual Design, Metaverse and 3D
-              Design.Currently Working as 3D Graphic Designer at <a href="https://www.rario.com/" target="_blank" rel="noreferrer">RARIO</a>
-            </p>
-          </div>
+            className="rounded"
+            src={Aboutm}
+            alt="/"
+            quality="100"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+            data-aos-delay="0"
+          />
+        </Hover>
+        <div className="flex">
+          <p className="font-omiofont3 lg:text-[16px] sm:text-[12px] leading-loose lg:tracking-[2px] sm:tracking-[1px]">
+            I’m a Digital Product Designer, with a constant obsession to inject
+            uniqueness & delight into all my crafts. I’ve minted and sold NFTs
+            involving 3D animations on various NFT marketplace. Lately, I’ve
+            attained some knowledge in coding, mainly front-end development &
+            I’m intrigued by the possibilities offered by Visual Design, Metaverse and 3D
+            Design.Currently Working as 3D Graphic Designer at <a href="https://www.rario.com/" target="_blank" rel="noreferrer">RARIO</a>
+          </p>
         </div>
       </div>
-    
-    
+    </div>
+
+
   );
 };
 
