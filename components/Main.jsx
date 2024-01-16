@@ -34,10 +34,10 @@ const Main = () => {
           />
           I am
         </p>
-        <h1 className="font-omiofont2 indent-0.5  text-3xl uppercase lg:text-6xl lg:tracking-[24px]  text-center text-nft sm:text-3xl tracking-[8px]">
+        <h1 className="font-omiofont2 indent-0.5  text-3xl uppercase lg:text-6xl lg:tracking-[24px]  text-center text-nft sm:text-3xl tracking-[2px]">
           Amiya Ranjan
         </h1>
-        <p className="font-omiofont2 text-center lg:text-[16px] uppercase py-3 mx-auto text-nft lg:tracking-[12px] text-[12px] tracking-[4px]">
+        <p className="font-omiofont2 text-center lg:text-[16px] uppercase py-3 mx-auto text-nft lg:tracking-[12px] text-[12px] tracking-[1px]">
           Visual Designer | 3D Generalist
         </p>
       </motion.div>
