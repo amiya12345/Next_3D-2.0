@@ -25,12 +25,12 @@ import Footer from "../components/Footer";
 
 const ai = () => {
   return (
-    
+
     <div className="w-full max-h-screen">
-       <Navbar />
+      <Navbar />
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
-    
+
         <Image
           className="absolute z-1"
           layout="fill"
@@ -51,8 +51,8 @@ const ai = () => {
             Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-          When I have some extra time, I enjoy immersing myself in Midjourney and DALL-E. These platforms allow me to create unique pieces using AI prompts. Each artwork represents a distinctive journey into form and function, celebrating the beauty and marvels of the digital era. The colors are lively and striking, the lines flow smoothly, and the outcomes are frequently awe-inspiring.
-           From abstract designs to lifelike landscapes, AI-generated art is expanding our understanding of what is achievable.
+            When I have some extra time, I enjoy immersing myself in Midjourney and DALL-E. These platforms allow me to create unique pieces using AI prompts. Each artwork represents a distinctive journey into form and function, celebrating the beauty and marvels of the digital era. The colors are lively and striking, the lines flow smoothly, and the outcomes are frequently awe-inspiring.
+            From abstract designs to lifelike landscapes, AI-generated art is expanding our understanding of what is achievable.
           </p>
         </div>
       </div>
@@ -110,7 +110,7 @@ const ai = () => {
               data-aos-delay="0"
             />
           </Hover>
-         
+
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -124,7 +124,7 @@ const ai = () => {
               data-aos-delay="0"
             />
           </Hover>
-           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
+          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
               src={Ai6}
@@ -136,7 +136,7 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -149,7 +149,7 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -162,7 +162,7 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -175,7 +175,7 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -188,7 +188,7 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -201,7 +201,7 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -214,7 +214,7 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -227,7 +227,7 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -240,7 +240,7 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -253,7 +253,7 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -266,26 +266,26 @@ const ai = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
         </div>
       </div>
       <div className="max-w-[100%] lg:mx-24 mt-8 sm: mx-4">
         <div className="grid grid-cols-2 lg:gap-12 sm:grid-cols-2 gap-4 ">
-        
-         <div className="flex justify-start items-center col-span-1">
-          <Link href="/ai">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Work</p>
-        </Link>
+
+          <div className="flex justify-start items-center col-span-1">
+            <Link href="/ai">
+              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Work</p>
+            </Link>
+          </div>
+          <div className="flex justify-end items-center col-span-1">
+            <Link href="/web">
+              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
+            </Link>
+          </div>
         </div>
-        <div className="flex justify-end items-center col-span-1">
-          <Link href="/web">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
-        </Link>
-        </div>
+
       </div>
-      
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
