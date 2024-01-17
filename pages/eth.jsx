@@ -18,22 +18,22 @@ import Footer from "../components/Footer";
 const eth = () => {
   return (
     <div className="w-full max-h-screen">
-       <Navbar />
-    <div className="w-screen h-[30vh] lg:h-[40vh] relative">
-      <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
-      <Image
-        className="absolute z-1"
-        layout="fill"
-        objectFit="cover"
-        src={Eth}
-        alt="/"
-      />
-       <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0">
+      <Navbar />
+      <div className="w-screen h-[30vh] lg:h-[40vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
+        <Image
+          className="absolute z-1"
+          layout="fill"
+          objectFit="cover"
+          src={Eth}
+          alt="/"
+        />
+        <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0">
           <h2 className="font-omiofont2 lg:text-3xl lg:mx-24 mx-4 text-2xl">ETH Portals</h2>
           <h3 className="font-omiofont2 lg:text-1.5xl lg:mx-24 mx-4 text-xl">Blender /NFT</h3>
           <h3 className=" font-omiofont2  lg:mx-24 mx-4">Personal Work</h3>
         </div>
-    </div>
+      </div>
 
       <div className="max-w-[100%] lg:mx-24 grid md:grid-cols-5 gap-8 pt-8 mx-4">
         <div className="col-span-6">
@@ -44,8 +44,8 @@ const eth = () => {
             ETH portal is a nft collection which tells a story of various portal like Magical eth portal, Sci-fi eth portal and pirate eth portal.
             This portals, inspired by the Ethereum cryptocurrency, is brought to life through intricate 3D rendering and artistic flair.
             Through its seamless blend of technology and imagination, the ETH Portal showcases the limitless possibilities of digital art.As viewers gaze into ETH Portals, they are transported to a world where innovation, art, and imagination collide,
-             leaving them with a sense of awe and wonder at the boundless potential of the digital realm.
-             
+            leaving them with a sense of awe and wonder at the boundless potential of the digital realm.
+
           </p>
         </div>
       </div>
@@ -159,20 +159,20 @@ const eth = () => {
       </div>
       <div className="max-w-[100%] lg:mx-24 mt-8 sm: mx-4">
         <div className="grid grid-cols-2 lg:gap-12 sm:grid-cols-2 gap-4 ">
-        
-         <div className="flex justify-start items-center col-span-1">
-          <Link href="/web">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Work</p>
-        </Link>
-        </div>
-        <div className="flex justify-end items-center col-span-1">
-          <Link href="/cyber">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
-        </Link>
+
+          <div className="flex justify-start items-center col-span-1">
+            <Link href="/web">
+              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Work</p>
+            </Link>
+          </div>
+          <div className="flex justify-end items-center col-span-1">
+            <Link href="/cyber">
+              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
+            </Link>
+          </div>
         </div>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

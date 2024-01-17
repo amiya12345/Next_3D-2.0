@@ -17,7 +17,7 @@ import Footer from "../components/Footer";
 const typo = () => {
   return (
     <div className="w-full max-h-screen">
-       <Navbar />
+      <Navbar />
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
         <Image
@@ -40,8 +40,8 @@ const typo = () => {
             Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-          For my personal challenge, I embarked on 30 Days of 3D Shape Design, exploring and honing my creative skills in 3D modeling. Over the past month, I created unique and captivating 3D shapes daily using Blender. This project pushed my artistic boundaries, encouraging experimentation and innovation. Each passing day, I witnessed growth in my skills and artistic vision, culminating in a diverse collection of
-           stunning 3D shapes. This self-driven journey was a testament to my dedication, passion, and evolution as a 3D designer.
+            For my personal challenge, I embarked on 30 Days of 3D Shape Design, exploring and honing my creative skills in 3D modeling. Over the past month, I created unique and captivating 3D shapes daily using Blender. This project pushed my artistic boundaries, encouraging experimentation and innovation. Each passing day, I witnessed growth in my skills and artistic vision, culminating in a diverse collection of
+            stunning 3D shapes. This self-driven journey was a testament to my dedication, passion, and evolution as a 3D designer.
           </p>
         </div>
       </div>
@@ -99,7 +99,7 @@ const typo = () => {
               data-aos-delay="0"
             />
           </Hover>
-         
+
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -153,20 +153,20 @@ const typo = () => {
       </div>
       <div className="max-w-[100%] lg:mx-24 mt-8 sm: mx-4">
         <div className="grid grid-cols-2 lg:gap-12 sm:grid-cols-2 gap-4 ">
-        
-         <div className="flex justify-start items-center col-span-1">
-          <Link href="/cyber">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Work</p>
-        </Link>
-        </div>
-        <div className="flex justify-end items-center col-span-1">
-          <Link href="/room">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
-        </Link>
+
+          <div className="flex justify-start items-center col-span-1">
+            <Link href="/cyber">
+              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Work</p>
+            </Link>
+          </div>
+          <div className="flex justify-end items-center col-span-1">
+            <Link href="/room">
+              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
+            </Link>
+          </div>
         </div>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

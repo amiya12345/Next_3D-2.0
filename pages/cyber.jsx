@@ -15,7 +15,7 @@ import Footer from "../components/Footer";
 const typo = () => {
   return (
     <div className="w-full max-h-screen">
-       <Navbar />
+      <Navbar />
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
         <Image
@@ -38,8 +38,8 @@ const typo = () => {
             Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-          The Cyberpunk Art and 3D Diorama project is an exciting endeavor that combines futuristic artwork and immersive dioramas. Inspired by cyberpunk themes,
-           the project aims to create captivating digital art and miniature scenes that depict a world where technology and urban grit collide.
+            The Cyberpunk Art and 3D Diorama project is an exciting endeavor that combines futuristic artwork and immersive dioramas. Inspired by cyberpunk themes,
+            the project aims to create captivating digital art and miniature scenes that depict a world where technology and urban grit collide.
           </p>
         </div>
       </div>
@@ -97,7 +97,7 @@ const typo = () => {
               data-aos-delay="0"
             />
           </Hover>
-         
+
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
@@ -122,25 +122,25 @@ const typo = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> 
+          </Hover>
         </div>
       </div>
       <div className="max-w-[100%] lg:mx-24 mt-8 sm: mx-4">
         <div className="grid grid-cols-2 lg:gap-12 sm:grid-cols-2 gap-4 ">
-        
-         <div className="flex justify-start items-center col-span-1">
-          <Link href="/eth">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Work</p>
-        </Link>
-        </div>
-        <div className="flex justify-end items-center col-span-1">
-          <Link href="/typo">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
-        </Link>
+
+          <div className="flex justify-start items-center col-span-1">
+            <Link href="/eth">
+              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Work</p>
+            </Link>
+          </div>
+          <div className="flex justify-end items-center col-span-1">
+            <Link href="/typo">
+              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
+            </Link>
+          </div>
         </div>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -15,9 +15,9 @@ import Footer from "../components/Footer";
 
 const web = () => {
   return (
-    
+
     <div className="w-full max-h-screen">
-        <Navbar />
+      <Navbar />
       <div className="w-full h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
         <Image
@@ -40,8 +40,8 @@ const web = () => {
             Project Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-          I created these 3D illustration for my portfolio using Blender. First, I built the layout with simple shapes and added more details by reusing the geometry. To improve the appearance, I used smooth shading with auto-smooth set at 180 degrees. Lastly, I applied materials to the shapes. The color palette was straightforward, and before finalizing it, 
-          I did a quick iteration to select the best colors.
+            I created these 3D illustration for my portfolio using Blender. First, I built the layout with simple shapes and added more details by reusing the geometry. To improve the appearance, I used smooth shading with auto-smooth set at 180 degrees. Lastly, I applied materials to the shapes. The color palette was straightforward, and before finalizing it,
+            I did a quick iteration to select the best colors.
           </p>
         </div>
       </div>
@@ -158,20 +158,20 @@ const web = () => {
       </div>
       <div className="max-w-[100%] lg:mx-24 mt-8 sm: mx-4">
         <div className="grid grid-cols-2 lg:gap-12 sm:grid-cols-2 gap-4 ">
-        
-         <div className="flex justify-start items-center col-span-1">
-          <Link href="/#work">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Work</p>
-        </Link>
-        </div>
-        <div className="flex justify-end items-center col-span-1">
-          <Link href="/eth">
-          <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
-        </Link>
+
+          <div className="flex justify-start items-center col-span-1">
+            <Link href="/#work">
+              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Work</p>
+            </Link>
+          </div>
+          <div className="flex justify-end items-center col-span-1">
+            <Link href="/eth">
+              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
+            </Link>
+          </div>
         </div>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
