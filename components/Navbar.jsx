@@ -72,7 +72,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="ml-10 hover:text-sky-500">
-          <a href="https://drive.google.com/file/d/1261Z7_NninDToDZ5b5TWWaHwkPACxK5O" target="_blank" rel="noreferrer ">
+          <a href="https://drive.google.com/file/d/1ai1Xzx4KP03XlBnJd0tz_FlRM4gb4u_U/view?usp=sharing" target="_blank" rel="noreferrer ">
             Resume
           </a>
         </li>
