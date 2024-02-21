@@ -6,19 +6,21 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import Script from 'next/script'
 
+
 export default function Home() {
     return (
         <>
             <Head>
+            <link rel="icon" href="/favicon.ico" sizes="any" />
 
 
                 <title>AR3D-Portfolio of Amiya</title>
                 <meta
                     name="description"
-                    content="Designed & Developed By Amiya using Next.js and Tailwind"
+                    content="Designed & Developed By AR"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="icon" href="/favicon.ico" />
+                
             </Head>
 
 

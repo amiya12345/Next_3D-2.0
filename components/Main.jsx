@@ -19,7 +19,7 @@ const Main = () => {
       >
         <p className=" font-omiofont2 lg:text-[24px] text-[16px] mx-auto text-nft">
           <Typed
-            className=" font-omiofont2 lg:text-[24px] text-[16px]  text-center mx-auto text-nft"
+            className="font-omiofont2 lg:text-[24px] text-[16px]  text-center mx-auto text-nft"
             strings={[
               "Hello!",
               "Hola!",

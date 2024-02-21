@@ -19,7 +19,7 @@ const typo = () => {
     <div className="w-full max-h-screen">
       <Navbar />
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10"/>
         <Image
           className="absolute z-1"
           layout="fill"
@@ -136,7 +136,8 @@ const typo = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover> <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
+          </Hover> 
+          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
               src={Shape8}
