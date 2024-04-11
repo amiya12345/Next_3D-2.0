@@ -13,25 +13,55 @@ import Link from "next/link";
 import Hover from "react-3d-hover";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Inner from "../components/Inner";
 
 const typo = () => {
   return (
+    <Inner>
     <div className="w-full max-h-screen">
       <Navbar />
-      <div className="w-screen h-[30vh] lg:h-[40vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10"/>
-        <Image
+      <div className="w-full h-[30vh] lg:h-[100vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[40vh] lg:h-[100vh] bg-black/50 z-10" />
+      <Image
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
           src={Shap}
           alt="/"
+
         />
-        <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0">
-          <h2 className="font-omiofont2 lg:text-3xl lg:mx-24 mx-4 text-2xl">30 Days of Shapes</h2>
-          <h3 className="font-omiofont2 lg:text-1.5xl lg:mx-24 mx-4 text-xl">Blender / 3D Design</h3>
-          <h3 className="font-omiofont2 lg:mx-24 mx-4">Project</h3>
-        </div>
+       <div className="absolute top-[50%] max-w-[100%]  left-[50%]  translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0 ">
+            <h2
+              className="font-omiofont2 lg:text-3xl lg:mx-24 mx-4 text-[16px]  lg:tracking-[24px] tracking-widest uppercase lg:my-4 my-2"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            >
+           3D Shapes
+            </h2>
+            <h3
+              className="font-omiofont2 lg:text-1.5xl lg:mx-24 mx-4 my-2 tracking-wide"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            >
+              Blender / Graphic
+            </h3>
+            <h3
+              className="font-omiofont2 lg:text-1.5xl lg:mx-24 mx-4  my-2 tracking-wide"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            >
+              Personal Work
+            </h3>
+          </div>
       </div>
 
       <div className="max-w-[100%] lg:mx-24  grid md:grid-cols-5 gap-8 pt-8 mx-4">
@@ -169,6 +199,7 @@ const typo = () => {
       </div>
       <Footer />
     </div>
+    </Inner>
   );
 };
 

@@ -3,19 +3,23 @@ import Typed from "react-typed";
 import "react-typed/dist/animatedCursor.css";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import Inner from "./Inner";
+
 
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
   ssr: false,
 });
 
 const Main = () => {
+  
   return (
+    <Inner>
     <section name="home" className="h-screen w-screen flex relative">
       <motion.div
-        className="flex flex-col justify-center items-center absolute z-5 top-1/2 w-full"
+        className="flex flex-col justify-center items-center absolute top-1/2 w-full z-10"
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: -10 }}
-        transition={{ delay: 1, duration: 2.5, type: "spring" }}
+        transition={{ delay: 1, duration: 3, type: "spring" }}
       >
         <p className=" font-omiofont2 lg:text-[24px] text-[16px] mx-auto text-nft">
           <Typed
@@ -42,9 +46,10 @@ const Main = () => {
         </p>
       </motion.div>
       <div className="flex-1">
-        <Spline scene="https://draft.spline.design/l8F33h5T7d0N6k7k/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/Ox0fWVk4077ijuQ9/scene.splinecode" />
       </div>
     </section>
+    </Inner>
   );
 };
 

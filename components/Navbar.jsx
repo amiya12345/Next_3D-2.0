@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Inner from "./Inner";
+
 
 
 
@@ -30,6 +32,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    <Inner>
     <div
       style={{ backgroundColor: `${color}` }}
       className={
@@ -137,6 +140,7 @@ const Navbar = () => {
         </li>
       </ul>
     </div>
+    </Inner>
   );
 };
 
