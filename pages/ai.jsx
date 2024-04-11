@@ -21,11 +21,12 @@ import Link from "next/link";
 import Hover from "react-3d-hover";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Inner from "../components/Inner";
 
 
 const ai = () => {
   return (
- 
+ <Inner>
       <div className="w-full max-h-screen">
         <Navbar />
         <div className="w-full h-[30vh] lg:h-[100vh] relative">
@@ -320,7 +321,7 @@ const ai = () => {
         </div>
         <Footer />
       </div>
-   
+      </Inner>
   );
 };
 
