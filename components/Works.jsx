@@ -6,7 +6,7 @@ import Room from "../public/assets/works/room/room.webp";
 import Webi from "../public/assets/works/web/webi.webp";
 import Cybr from "../public/assets/works/cyber/cyber.webp";
 import WorksItem from "./Worksitem";
-import Inner from "./Inner";
+
 
 const Projects = () => {
   return (
@@ -17,13 +17,13 @@ const Projects = () => {
          
         <div className="grid md:grid-cols-2">
        
-          <Inner>
+          
           <WorksItem
             title="3D illustrataion"
             backgroundImg={Webi}
             projectUrl="/web"
           />
-</Inner>
+
           <WorksItem
             title="Ether Portal"
             backgroundImg={Ethp}

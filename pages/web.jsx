@@ -27,6 +27,7 @@ const web = () => {
           objectFit="cover"
           src={Webi}
           alt="/"
+          quality={100}
         />
          <div className="absolute top-[50%] max-w-[100%]  left-[50%]  translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0 ">
             <h2

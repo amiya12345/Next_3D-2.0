@@ -1,14 +1,16 @@
+
 import "../styles/globals.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../components/Navbar";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 function MyApp({ Component, pageProps, router }) {
   useEffect(() => {
     AOS.init();
   }, []);
+
   <Navbar />;
 
   return (

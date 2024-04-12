@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import Inner from "./Inner";
 
 
+
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
   ssr: false,
 });
