@@ -34,7 +34,7 @@ export default function Inner({ children }) {
     exit: {
       top: "0",
       transition: {
-        duration: 2,
+        duration: 1.5,
         ease: [0.76, 0, 0.24, 1],
       },
     },
@@ -57,7 +57,7 @@ export default function Inner({ children }) {
       scale: 0.5,
       opacity: 0.5,
       transition: {
-        duration: 1.5,
+        duration: 1.2,
         ease: [0.76, 0, 0.24, 1],
       },
     },
