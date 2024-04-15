@@ -90,7 +90,6 @@ const Navbar = () => {
       >
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
-      {/* Mobile Menu */}
 
       <ul
         className={
