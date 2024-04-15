@@ -34,7 +34,7 @@ export default function Inner({ children }) {
     exit: {
       top: "0",
       transition: {
-        duration: 1,
+        duration: 2,
         ease: [0.76, 0, 0.24, 1],
       },
     },
@@ -53,10 +53,11 @@ export default function Inner({ children }) {
     },
     exit: {
       y: -100,
-      scale: 0.9,
+      rotateX:45,
+      scale: 0.5,
       opacity: 0.5,
       transition: {
-        duration: 1,
+        duration: 1.5,
         ease: [0.76, 0, 0.24, 1],
       },
     },
@@ -66,7 +67,7 @@ export default function Inner({ children }) {
     <div className="inner">
       <motion.div
         {...anim(slide)}
-        className=" w-screen h-screen fixed top-0 left-0 z-40 bg-[#151515] "
+        className=" w-screen h-screen fixed top-0 left-0 z-40 bg-[#0a0a0a] "
       />
       
       <motion.div {...anim(perspective)} >

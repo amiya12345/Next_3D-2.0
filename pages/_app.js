@@ -1,6 +1,6 @@
 
 import "../styles/globals.css";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../components/Navbar";
@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps, router }) {
   useEffect(() => {
     AOS.init();
   }, []);
-
+ 
   <Navbar />;
 
   return (

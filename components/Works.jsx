@@ -1,3 +1,5 @@
+
+import { useEffect } from 'react';
 import React from "react";
 import Ethp from "../public/assets/works/eth/ethp.webp";
 import Type from "../public/assets/works/type.webp";
