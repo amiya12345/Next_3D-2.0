@@ -47,7 +47,7 @@ const Main = () => {
         </p>
       </motion.div>
       <div className="flex-1">
-      <Spline scene="https://prod.spline.design/Ox0fWVk4077ijuQ9/scene.splinecode" />
+
       </div>
     </section>
     </Inner>
