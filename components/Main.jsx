@@ -37,7 +37,7 @@ const Main = () => {
               Amiya Ranjan
             </h1>
             <p className="font-omiofont2 text-center lg:text-[16px] uppercase py-3 mx-auto text-nft lg:tracking-[12px] text-[12px] tracking-[1px]">
-              UI/UX Designer | 3D Generalist
+              Visual Designer | 3D Generalist
             </p>
           </motion.div>
         </Vortex>
