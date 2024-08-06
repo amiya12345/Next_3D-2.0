@@ -53,7 +53,6 @@ export default function Inner({ children }) {
     },
     exit: {
       y: -100,
-      rotateX:45,
       scale: 0.5,
       opacity: 0.5,
       transition: {

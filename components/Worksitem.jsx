@@ -12,6 +12,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
               className="transition duration-500 ease-in-out cursor-pointer group-hover:opacity-40"
               src={backgroundImg}
               alt="/"
+              layout="responsive"
             />
             <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
               <h3 className="lg:text-2xl text-white uppercase  lg:tracking-[0.25rem] text-center sm:text-xl  font-omiofont2 sm:tracking-[0.125rem]">

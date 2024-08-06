@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import Script from "next/script";
 
-
 export default function Home() {
   return (
     <>
@@ -36,7 +35,6 @@ gtag('config', 'G-XXT8KNHF8C');
         <Works />
         <About />
         <Footer />
-       
       </div>
     </>
   );

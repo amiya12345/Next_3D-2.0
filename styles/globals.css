@@ -32,6 +32,7 @@ html {
 @layer base {
   body {
     @apply bg-[#000000] text-[#E5E7EB] w-full h-full;
+    scroll-behavior: smooth;
   }
 
   html {
