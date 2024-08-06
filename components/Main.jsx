@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 const Main = () => {
   return (
     <Inner>
+
       <section name="home" className="h-screen w-screen flex relative">
         <Vortex
           backgroundColor="black"

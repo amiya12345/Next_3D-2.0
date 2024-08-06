@@ -39,7 +39,7 @@ export default function Inner({ children }) {
       },
     },
   };
- 
+
   const perspective = {
     intial: {
       y: 0,
@@ -68,8 +68,8 @@ export default function Inner({ children }) {
         {...anim(slide)}
         className=" w-screen h-screen fixed top-0 left-0 z-40 bg-[#0a0a0a] "
       />
-      
-      <motion.div {...anim(perspective)} >
+
+      <motion.div {...anim(perspective)}>
         <motion.div {...anim(opacity)} className="page">
           {children}
         </motion.div>
