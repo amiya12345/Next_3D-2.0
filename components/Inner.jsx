@@ -66,7 +66,7 @@ export default function Inner({ children }) {
     <div className="inner">
       <motion.div
         {...anim(slide)}
-        className=" w-screen h-screen fixed top-0 left-0 z-40 bg-[#0a0a0a] "
+        className=" w-screen h-screen fixed top-0 left-0 z-40 bg-[#000000] "
       />
 
       <motion.div {...anim(perspective)}>
