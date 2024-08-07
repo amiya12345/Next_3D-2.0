@@ -77,14 +77,8 @@ const ai = () => {
           <div className="col-span-6">
             <h2 className="lg:text-3xl font-omiofont1 sm:text-xl">Overview</h2>
             <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-              When I have some extra time, I enjoy immersing myself in Midjourney
-              and DALL-E. These platforms allow me to create unique pieces using
-              AI prompts. Each artwork represents a distinctive journey into form
-              and function, celebrating the beauty and marvels of the digital era.
-              The colors are lively and striking, the lines flow smoothly, and the
-              outcomes are frequently awe-inspiring. From abstract designs to
-              lifelike landscapes, AI-generated art is expanding our understanding
-              of what is achievable.
+            When I have some free time, I like to use Midjourney and DALL-E to create art. These tools help me make unique pieces with the help of AI prompts. Each artwork is a special experience in design, showing the beauty of modern technology. The colors are bright and bold, the lines are smooth, and the results are often amazing. From abstract patterns to realistic scenes, 
+            AI art is showing us new possibilities.
             </p>
           </div>
         </div>
