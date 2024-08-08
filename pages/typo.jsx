@@ -70,8 +70,7 @@ const typo = () => {
             Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-            For my personal challenge, I embarked on 30 Days of 3D Shape Design, exploring and honing my creative skills in 3D modeling. Over the past month, I created unique and captivating 3D shapes daily using Blender. This project pushed my artistic boundaries, encouraging experimentation and innovation. Each passing day, I witnessed growth in my skills and artistic vision, culminating in a diverse collection of
-            stunning 3D shapes. This self-driven journey was a testament to my dedication, passion, and evolution as a 3D designer.
+          For my personal challenge, I decided to try 30 Days of 3D Shape Design. Every day for a month, I created unique and interesting 3D shapes using Blender software. This project really pushed me to be more creative and experiment with new ideas. As each day passed, I could see my skills and artistic abilities improving. By the end, I had made a diverse collection of beautiful 3D shapes. This self-driven journey was a great example of my dedication, passion, and growth as a 3D designer.
           </p>
         </div>
       </div>

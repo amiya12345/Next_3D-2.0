@@ -69,8 +69,7 @@ const typo = () => {
             Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-            The 3D Isometric Cozy Room project is all about creating a warm and inviting virtual space,The focus of the project is to design the rooms layout, furniture, and decor with meticulous attention to detail. By using the isometric perspective, the room gains depth and dimension, making it more engaging and inviting.
-            Lighting and texture play a crucial role in enhancing the rooms ambiance. Warm color palettes and subtle details, like soft lighting and plush textures, create a soothing and cozy atmosphere.
+          The 3D Isometric Cozy Room project is all about creating a warm and inviting virtual space,The focus of the project is to design the rooms layout, furniture, and decor with meticulous attention to detail. By using the isometric perspective, the room gains depth and dimension, making it more engaging and inviting. Lighting and texture play a crucial role in enhancing the rooms ambiance. Warm color palettes and subtle details, like soft lighting and plush textures, create a soothing and cozy atmosphere.
           </p>
         </div>
       </div>

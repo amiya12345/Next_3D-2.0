@@ -70,10 +70,9 @@ const eth = () => {
             Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-            ETH portal is a nft collection which tells a story of various portal like Magical eth portal, Sci-fi eth portal and pirate eth portal.
-            This portals, inspired by the Ethereum cryptocurrency, is brought to life through intricate 3D rendering and artistic flair.
-            Through its seamless blend of technology and imagination, the ETH Portal showcases the limitless possibilities of digital art.As viewers gaze into ETH Portals, they are transported to a world where innovation, art, and imagination collide,
-            leaving them with a sense of awe and wonder at the boundless potential of the digital realm.
+          ETH Portal is a collection of NFTs that tell the story of different types of portals, like magical Ethereum portals, sci-fi Ethereum portals, and pirate Ethereum portals. These portals, inspired by the Ethereum cryptocurrency, have been brought to life through detailed 3D rendering and artistic creativity. By seamlessly combining technology and imagination, the ETH Portal project showcases the endless possibilities of digital art.
+
+As people look into the ETH Portals, they are transported to a world where innovation, art, and imagination come together. This leaves them feeling amazed and in awe of the boundless potential of the digital world.
 
           </p>
         </div>

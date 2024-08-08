@@ -65,11 +65,6 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="ml-10 hover:text-sky-500">
-          <Link href="/ai" scroll={false}>
-            A.I
-          </Link>
-        </li>
-        <li className="ml-10 hover:text-sky-500">
           <Link href="/#about" scroll={false}>
             About
           </Link>
@@ -114,11 +109,6 @@ const Navbar = () => {
             scroll={false}
           >
             Works
-          </Link>
-        </li>
-        <li className="ml-10 hover:text-sky-500 py-3 text-2xl">
-          <Link href="/ai" scroll={false}>
-            A.I
           </Link>
         </li>
         <li onClick={() => setNav(false)} className="py-3 text-2xl">

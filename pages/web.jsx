@@ -69,8 +69,9 @@ const web = () => {
             Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-            I created these 3D illustration for my portfolio using Blender. First, I built the layout with simple shapes and added more details by reusing the geometry. To improve the appearance, I used smooth shading with auto-smooth set at 180 degrees. Lastly, I applied materials to the shapes. The color palette was straightforward, and before finalizing it,
-            I did a quick iteration to select the best colors.
+          I created these 3D illustrations for my portfolio using Blender. First, I started by building the basic layout using simple shapes. Then, I added more details to the design by reusing the existing geometry. To improve the overall appearance, I used smooth shading and set the auto-smooth angle to 180 degrees. Finally, I applied materials to the shapes. 
+
+The color palette I chose was quite straightforward. Before finalizing the design, I did a quick iteration to select the best colors that would work well together.
           </p>
         </div>
       </div>
