@@ -1,206 +1,164 @@
+import dynamic from 'next/dynamic';
 import Image from "next/image";
-import React from "react";
-import Rim from "../public/assets/works/room/room.webp";
-import Rim1 from "../public/assets/works/room/room1.webp"
-import Rim2 from "../public/assets/works/room/room2.webp"
-import Rim3 from "../public/assets/works/room/room3.webp"
-import Rim4 from "../public/assets/works/room/room4.webp"
-import Rim5 from "../public/assets/works/room/room5.webp"
-import Rim6 from "../public/assets/works/room/room6.webp"
-import Rim7 from "../public/assets/works/room/room7.webp"
-import Rim8 from "../public/assets/works/room/room8.webp"
 import Link from "next/link";
-import Hover from "react-3d-hover";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Inner from "../components/Inner";
+import { memo, useMemo } from 'react';
+import { useInView } from 'react-intersection-observer';
 
-const typo = () => {
+// Dynamically import heavy components
+const Navbar = dynamic(() => import("../components/Navbar"), { ssr: true });
+const Footer = dynamic(() => import("../components/Footer"), { ssr: true });
+const Inner = dynamic(() => import("../components/Inner"), { ssr: true });
+
+// Lazy load Hover component as it's only needed for gallery items
+const Hover = dynamic(() => import("react-3d-hover"), { 
+  ssr: false,
+  loading: ({ children }) => <div className="transform-gpu">{children}</div>
+});
+
+// Memoized room images data
+const roomImages = Array.from({ length: 8 }, (_, i) => ({
+  src: `/assets/works/room/room${i + 1}.webp`,
+  alt: `Room design ${i + 1}`,
+  width: 800,
+  height: 600
+}));
+
+// Memoized Image component for gallery items
+const GalleryImage = memo(({ src, alt, inView }) => (
+  <div className="relative aspect-video">
+    {inView && (
+      <Image
+        className="rounded transform-gpu"
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        quality={75}
+        loading="lazy"
+      />
+    )}
+  </div>
+));
+
+GalleryImage.displayName = 'GalleryImage';
+
+// Memoized gallery item with hover effect
+const GalleryItem = memo(({ image, inView }) => (
+  <Hover scale={1.03} perspective={1000} speed={500}>
+    <GalleryImage {...image} inView={inView}   />
+  </Hover>
+));
+
+GalleryItem.displayName = 'GalleryItem';
+
+const RoomGallery = () => {
+  // Hero section intersection observer
+  const { ref: heroRef, inView: heroInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1
+  });
+
+  // Gallery section intersection observer
+  const { ref: galleryRef, inView: galleryInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+    rootMargin: '50px'
+  });
+
+  // Memoize the hero content
+  const heroContent = useMemo(() => (
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-10 w-full">
+      <div className="mx-4 lg:mx-24 text-center">
+        <h2 className="font-omiofont2 text-[16px] lg:text-3xl tracking-widest lg:tracking-[24px] uppercase mb-4">
+          Cozy Rooms
+        </h2>
+        <h3 className="font-omiofont2 tracking-wide mb-2">Blender / 3D Design</h3>
+        <h3 className="font-omiofont2 tracking-wide">Personal Work</h3>
+      </div>
+    </div>
+  ), []);
+
   return (
     <Inner>
-    <div className="w-full max-h-screen">
-      <Navbar />
-      <div className="w-full h-[30vh] lg:h-[100vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[40vh] lg:h-[100vh] bg-black/50 z-10" />
-        <Image
-          className="absolute z-1"
-          layout="fill"
-          objectFit="cover"
-          src={Rim}
-          alt="/"
-        />
-            <div className="absolute top-[50%] max-w-[100%]  left-[50%]  translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0 ">
-            <h2
-              className="font-omiofont2 lg:text-3xl lg:mx-24 mx-4 text-[16px]  lg:tracking-[24px] tracking-widest uppercase lg:my-4 my-2"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            >
-              Cozy Rooms
-            </h2>
-            <h3
-              className="font-omiofont2 lg:text-1.5xl lg:mx-24 mx-4 my-2 tracking-wide"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            >
-        Blender / 3D Design
-            </h3>
-            <h3
-              className="font-omiofont2 lg:text-1.5xl lg:mx-24 mx-4  my-2 tracking-wide"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            >
-              Personal Work
-            </h3>
-          </div>
-      </div>
+      <div className="w-full">
+        <Navbar />
+        
+        {/* Hero Section with lazy loading */}
+        <div ref={heroRef} className="relative h-[30vh] lg:h-[100vh]">
+          <div className="absolute inset-0 bg-black/50 z-10" />
+          {heroInView && (
+            <Image
+              className="absolute z-1"
+              fill
+              priority
+              quality={90}
+              sizes="100vw"
+              objectFit="cover"
+              src="/assets/works/room/room.webp"
+              alt="Room hero image"
+              
+            />
+          )}
+          {heroContent}
+        </div>
 
-      <div className="max-w-[100%] lg:mx-24  grid md:grid-cols-5 gap-8 pt-8 mx-4">
-        <div className="col-span-6">
-          <h2 className="lg:text-3xl font-omiofont1 text-xl">
-            Overview
-          </h2>
-          <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
-          The 3D Isometric Cozy Room project is all about creating a warm and inviting virtual space,The focus of the project is to design the rooms layout, furniture, and decor with meticulous attention to detail. By using the isometric perspective, the room gains depth and dimension, making it more engaging and inviting. Lighting and texture play a crucial role in enhancing the rooms ambiance. Warm color palettes and subtle details, like soft lighting and plush textures, create a soothing and cozy atmosphere.
+        {/* Overview Section */}
+        <section className="mx-4 lg:mx-24 mt-8">
+          <h2 className="text-xl lg:text-3xl font-omiofont1">Overview</h2>
+          <p className="font-omiofont3 mt-6 lg:mt-8 text-justify text-slate-500">
+            The 3D Isometric Cozy Room project is all about creating a warm and inviting virtual space. 
+            The focus is on designing room layouts, furniture, and decor with meticulous attention to detail. 
+            Using isometric perspective adds depth and dimension, while lighting and texture enhance the room's ambiance 
+            through warm color palettes and subtle details.
           </p>
-        </div>
-      </div>
-      <div className="max-w-[100%] lg:mx-24 mt-8 mx-4">
-        <div className="grid lg:gap-12 md:grid-cols-2 gap-4">
-          <Hover scale={1.03} perspective={1000} speed={500}>
-            <Image
-              className="rounded"
-              src={Rim1}
-              alt="/"
-              quality="100"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
-            <Image
-              className="rounded"
-              src={Rim2}
-              alt="/"
-              quality="100"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500}>
-            <Image
-              className="rounded"
-              src={Rim3}
-              alt="/"
-              quality="100"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
-            <Image
-              className="rounded"
-              src={Rim4}
-              alt="/"
-              quality="100"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            />
-          </Hover>
+        </section>
 
-          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
-            <Image
-              className="rounded"
-              src={Rim5}
-              alt="/"
-              quality="100"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
-            <Image
-              className="rounded"
-              src={Rim6}
-              alt="/"
-              quality="100"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
-            <Image
-              className="rounded"
-              src={Rim7}
-              alt="/"
-              quality="100"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
-            <Image
-              className="rounded"
-              src={Rim8}
-              alt="/"
-              quality="100"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="0"
-              data-aos-duration="1000"
-              data-aos-delay="0"
-            />
-          </Hover>
-        </div>
-      </div>
-      <div className="max-w-[100%] lg:mx-24 mt-8 sm: mx-4">
-        <div className="grid grid-cols-2 lg:gap-12 sm:grid-cols-2 gap-4 ">
+        {/* Gallery Grid with intersection observer and virtualization */}
+        <section 
+          ref={galleryRef} 
+          className="mx-4 lg:mx-24 mt-8"
+        >
+          <div className="grid md:grid-cols-2 gap-4 lg:gap-12">
+            {galleryInView && roomImages.map((image, index) => (
+              <GalleryItem 
+                key={image.src} 
+                image={image}
+                inView={galleryInView}
+                data-aos="fade-up"
+                  data-aos-easing="ease-in-out"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                  data-aos-delay="0"
+              />
+            ))}
+          </div>
+        </section>
 
-          <div className="flex justify-start items-center col-span-1">
-            <Link href="/typo">
-              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Previous Work</p>
+        {/* Navigation */}
+        <nav className="mx-4 lg:mx-24 mt-8 mb-8">
+          <div className="flex justify-between">
+            <Link 
+              href="/typo" 
+              className="text-[16px] lg:text-xl hover:underline hover:text-sky-500 font-omiofont3 transform-gpu"
+              prefetch={false}
+            >
+              Previous Work
+            </Link>
+            <Link 
+              href="https://www.behance.net/gallery/142907041/36-Days-of-Typo" 
+              className="text-[16px] lg:text-xl hover:underline hover:text-sky-500 font-omiofont3 transform-gpu"
+              prefetch={false}
+            >
+              Next Work
             </Link>
           </div>
-          <div className="flex justify-end items-center col-span-1">
-            <a href="https://www.behance.net/gallery/142907041/36-Days-of-Typo" rel="noreferrer" target="_blank">
-              <p className="cursor-pointer text-xl  hover:underline hover:text-sky-500 font-omiofont3 sm: text-[16px]">Next Work</p>
-            </a>
-          </div>
-        </div>
+        </nav>
+
+        <Footer />
       </div>
-      <Footer />
-    </div>
     </Inner>
   );
 };
 
-export default typo;
+// Prevent unnecessary re-renders
+export default memo(RoomGallery);

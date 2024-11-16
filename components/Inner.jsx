@@ -52,8 +52,7 @@ export default function Inner({ children }) {
       opacity: 1,
     },
     exit: {
-      y: -100,
-      scale: 0.5,
+      scale:1,
       opacity: 0.5,
       transition: {
         duration: 1.2,

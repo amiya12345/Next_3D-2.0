@@ -1,104 +1,84 @@
-import React from "react";
-import {
-  AiOutlineLinkedin,
-  AiOutlineBehance,
-  AiOutlineGithub,
-  AiOutlineDribbble,
-  AiOutlineTwitter,
-  AiOutlineMail,
-} from "react-icons/ai";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
-const Footer = () => {
-  return (
-    <footer className="footer bg-omio pt-1 pb-0 relative max-w-full ">
-      <div className="container mx-auto px-className max-w-full">
-        <div className="sm:flex sm:mt-8">
-          <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex justify-center flex-col md:flex-row">
-            <div className="flex flex-col items-center">
-              <span className=" text-nft uppercase mb-1 font-omiofont2 tracking-normal">
-                Connect with me
-              </span>
-              <div className="text-[24px] flex justify-between items-center py-4 lg:text-[32px]">
-                <span className="my-2 px-4">
-                  <a
-                    href="https://www.behance.net/amiyarsethi1"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-nft text-md hover:text-sky-500 "
-                  >
-                    <AiOutlineBehance />
-                  </a>
-                </span>
-                <span className="my-2 px-4">
-                  <a
-                    href="mailto:amiyaranjansethi0551@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-nft text-md hover:text-sky-500"
-                  >
-                    <AiOutlineMail />
-                  </a>
-                </span>
-                <span className="my-2 px-4">
-                  <a
-                    href="https://twitter.com/amiya_ars"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-nft text-md hover:text-sky-500"
-                  >
-                    <AiOutlineTwitter />
-                  </a>
-                </span>
-                <span className="my-2 px-4">
-                  <a
-                    href="https://github.com/amiya12345"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-nft  text-md hover:text-sky-500"
-                  >
-                    <AiOutlineGithub />
-                  </a>
-                </span>
-                <span className="my-2 px-4">
-                  <a
-                    href="https://dribbble.com/AR_3Design"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-nft text-md hover:text-sky-500"
-                  >
-                    <AiOutlineDribbble />
-                  </a>
-                </span>
-                <span className="my-2 px-4">
-                  <a
-                    href="https://www.linkedin.com/in/amiya-ranjan-sethi-618711165/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-nft text-md hover:text-sky-500"
-                  >
-                    <AiOutlineLinkedin />
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
+const socialLinks = [
+  {
+    id: 'behance',
+    href: 'https://www.behance.net/amiyarsethi1',
+    icon: 'M10.77 12.07c.37.17.55.45.55.84 0 .44-.17.73-.5.87-.33.14-.8.21-1.41.21H7.77v-2.12h1.66c.59 0 1.03.07 1.34.2zM10.51 9.1c.35.16.52.44.52.83 0 .43-.16.71-.47.84-.31.13-.75.2-1.33.2H7.77V8.91h1.49c.56 0 .97.06 1.25.19zM22 6v12c0 2.2-1.8 4-4 4H6c-2.2 0-4-1.8-4-4V6c0-2.2 1.8-4 4-4h12c2.2 0 4 1.8 4 4zm-5.08 3.69c.23.41.35.87.35 1.37 0 .55-.13 1.04-.38 1.47-.15.25-.37.48-.67.68.45.17.78.44 1.01.79.23.35.34.77.34 1.26 0 .51-.13.97-.38 1.37-.16.27-.37.49-.61.68-.28.22-.6.37-.97.45-.37.08-.77.12-1.19.12H9.23V7.38h5.27c1.32 0 2.25.31 2.77.93.31.37.46.81.46 1.32 0 .36-.08.68-.23.96-.15.27-.37.5-.66.67.44.15.78.38 1.01.68zm-6.3 4.09l2.52-4.34h-2.52v4.34zm9.92 1.62c-.59.57-1.42.85-2.47.85-.97 0-1.77-.28-2.4-.85-.63-.57-.96-1.32-1.01-2.27h2.04c.04.38.19.71.43.97.24.26.6.39 1.07.39.44 0 .8-.13 1.07-.39.27-.26.41-.59.41-.97 0-.38-.14-.71-.41-.97-.27-.26-.63-.39-1.07-.39-.47 0-.83.13-1.07.39-.24.26-.39.59-.43.97h-2.04c.05-.95.38-1.7 1.01-2.27.63-.57 1.43-.85 2.4-.85 1.05 0 1.88.28 2.47.85.59.57.89 1.32.89 2.27 0 .95-.3 1.7-.89 2.27z'
+  },
+  {
+    id: 'mail',
+    href: 'mailto:amiyaranjansethi0551@gmail.com',
+    icon: 'M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'
+  },
+  {
+    id: 'twitter',
+    href: 'https://twitter.com/amiya_ars',
+    icon: 'M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z'
+  },
+  {
+    id: 'github',
+    href: 'https://github.com/amiya12345',
+    icon: 'M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'
+  },
+  {
+    id: 'dribbble',
+    href: 'https://dribbble.com/AR_3Design',
+    icon: 'M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z'
+  },
+  {
+    id: 'linkedin',
+    href: 'https://www.linkedin.com/in/amiya-ranjan-sethi-618711165/',
+    icon: 'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z'
+  }
+];
+
+const SocialIcon = ({ path, href }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noreferrer"
+    className="text-nft text-2xl lg:text-3xl hover:text-sky-500 transition-colors duration-200"
+  >
+    <svg
+      viewBox="0 0 24 24"
+      className="w-6 h-6 fill-current"
+    >
+      <path d={path} />
+    </svg>
+  </a>
+);
+
+const Footer = () => (
+  <footer className="bg-omio pt-1 pb-0 w-full">
+    <div className="container mx-auto px-4">
+      <div className="flex flex-col items-center mt-8">
+        <span className="text-nft uppercase mb-1 font-omiofont2 tracking-normal">
+          Connect with me
+        </span>
+        
+        <div className="flex flex-wrap justify-center gap-8 py-4">
+          {socialLinks.map(({ id, href, icon }) => (
+            <span key={id} className="my-2">
+              <SocialIcon href={href} path={icon} />
+            </span>
+          ))}
         </div>
       </div>
-      <div className="container mx-auto px-6">
-        <div className="border-t-2 border-[#fffff] flex flex-col items-center">
-          <div className="sm:w-2/3 text-center py-6">
-            <p className="text-sm text-nft font-bold mb-0 font-omiofont3">
-              © 2022 Designed and Developed by
-              <span className="text-sky-500 ml-2"> <Link href="/">
-                Amiya.
-              </Link></span>
-            </p>
-          </div>
+
+      <div className="border-t-2 border-[#ffffff] mt-6">
+        <div className="text-center py-6">
+          <p className="text-sm text-nft font-bold font-omiofont3">
+            © {new Date().getFullYear()} Designed and Developed by
+            <Link href="/" className="text-sky-500 ml-2 hover:text-sky-600 transition-colors duration-200">
+              Amiya.
+            </Link>
+          </p>
         </div>
       </div>
-    </footer>
-  );
-};
+    </div>
+  </footer>
+);
 
 export default Footer;
