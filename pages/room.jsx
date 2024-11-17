@@ -45,7 +45,7 @@ GalleryImage.displayName = 'GalleryImage';
 // Memoized gallery item with hover effect
 const GalleryItem = memo(({ image, inView }) => (
   <Hover scale={1.03} perspective={1000} speed={500}>
-    <GalleryImage {...image} inView={inView}   />
+    <GalleryImage {...image} inView={inView} />
   </Hover>
 ));
 
@@ -96,7 +96,6 @@ const RoomGallery = () => {
               objectFit="cover"
               src="/assets/works/room/room.webp"
               alt="Room hero image"
-              
             />
           )}
           {heroContent}
@@ -108,7 +107,7 @@ const RoomGallery = () => {
           <p className="font-omiofont3 mt-6 lg:mt-8 text-justify text-slate-500">
             The 3D Isometric Cozy Room project is all about creating a warm and inviting virtual space. 
             The focus is on designing room layouts, furniture, and decor with meticulous attention to detail. 
-            Using isometric perspective adds depth and dimension, while lighting and texture enhance the room's ambiance 
+            Using isometric perspective adds depth and dimension, while lighting and texture enhance the room&apos;s ambiance 
             through warm color palettes and subtle details.
           </p>
         </section>
@@ -125,10 +124,10 @@ const RoomGallery = () => {
                 image={image}
                 inView={galleryInView}
                 data-aos="fade-up"
-                  data-aos-easing="ease-in-out"
-                  data-aos-offset="0"
-                  data-aos-duration="1000"
-                  data-aos-delay="0"
+                data-aos-easing="ease-in-out"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+                data-aos-delay="0"
               />
             ))}
           </div>
