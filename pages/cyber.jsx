@@ -106,5 +106,6 @@ const Cyber = () => {
     </Inner>
   );
 };
+Cyber.displayName = 'Cyber';
 
 export default Cyber;

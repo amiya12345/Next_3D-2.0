@@ -25,7 +25,7 @@ const TYPED_CONFIG = {
   loop: true
 };
 
-// Memoized Typography components
+// Memoized Typography components with display names
 const GreetingText = memo(() => (
   <p className="font-omiofont2 lg:text-[24px] text-[16px] mx-auto text-nft">
     <Typed
@@ -36,33 +36,37 @@ const GreetingText = memo(() => (
     I am
   </p>
 ));
+GreetingText.displayName = 'GreetingText';
 
 const NameText = memo(() => (
   <h1 className="font-omiofont2 indent-0.5 text-3xl uppercase lg:text-6xl lg:tracking-[24px] text-center text-nft sm:text-3xl tracking-[2px]">
     Amiya Ranjan
   </h1>
 ));
+NameText.displayName = 'NameText';
 
 const RoleText = memo(() => (
   <p className="font-omiofont2 text-center lg:text-[16px] uppercase py-3 mx-auto text-nft lg:tracking-[12px] text-[12px] tracking-[1px]">
     Visual Designer | 3D Generalist
   </p>
 ));
+RoleText.displayName = 'RoleText';
+
+// Content wrapper component with display name
+const ContentWrapper = memo(() => (
+  <motion.div
+    className="flex flex-col justify-center items-center absolute top-1/2 w-full z-10"
+    {...ANIMATION_CONFIG}
+  >
+    <GreetingText />
+    <NameText />
+    <RoleText />
+  </motion.div>
+));
+ContentWrapper.displayName = 'ContentWrapper';
 
 // Main component
 const Main = () => {
-  // Memoized content wrapper
-  const ContentWrapper = useCallback(() => (
-    <motion.div
-      className="flex flex-col justify-center items-center absolute top-1/2 w-full z-10"
-      {...ANIMATION_CONFIG}
-    >
-      <GreetingText />
-      <NameText />
-      <RoleText />
-    </motion.div>
-  ), []);
-
   return (
     <Inner>
       <section className="h-screen w-screen flex relative">
@@ -77,4 +81,8 @@ const Main = () => {
   );
 };
 
+// Add display name to Main component
+Main.displayName = 'Main';
+
+// Export memoized Main component
 export default memo(Main);

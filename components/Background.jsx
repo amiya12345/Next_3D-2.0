@@ -1,5 +1,5 @@
 import { cn } from "../lib/utils"
-import { useEffect, useRef, useMemo } from "react"
+import { useEffect, useRef, useMemo, useCallback } from "react"
 import { createNoise3D } from "simplex-noise"
 import { motion } from "framer-motion"
 
@@ -45,7 +45,7 @@ export const Vortex = ({
   const center = useRef([0, 0])
   const tick = useRef(0)
 
-  const initParticle = (i, canvas) => {
+  const initParticle = useCallback((i, canvas) => {
     const x = Math.random() * canvas.width
     const y = center.current[1] + (Math.random() * 2 - 1) * rangeY
     const ttl = CONSTANTS.BASE_TTL + Math.random() * CONSTANTS.RANGE_TTL
@@ -58,9 +58,9 @@ export const Vortex = ({
       0, ttl, speed, // life, ttl, speed
       radius, hue // radius, hue
     ], i)
-  }
+  }, [CONSTANTS, baseHue, baseRadius, baseSpeed, particleProps, rangeRadius, rangeSpeed, rangeY])
 
-  const updateParticle = (i, ctx, canvas) => {
+  const updateParticle = useCallback((i, ctx, canvas) => {
     const {
       OFFSETS: { X: xOff, Y: yOff, Z: zOff },
       NOISE_STEPS,
@@ -106,9 +106,9 @@ export const Vortex = ({
     if (x2 > canvas.width || x2 < 0 || y2 > canvas.height || y2 < 0 || life > ttl) {
       initParticle(i, canvas)
     }
-  }
+  }, [CONSTANTS, initParticle, noise3D, particleProps])
 
-  const draw = (canvas, ctx) => {
+  const draw = useCallback((canvas, ctx) => {
     tick.current++
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     ctx.fillStyle = backgroundColor
@@ -133,9 +133,9 @@ export const Vortex = ({
     ctx.restore()
 
     animationFrameRef.current = requestAnimationFrame(() => draw(canvas, ctx))
-  }
+  }, [CONSTANTS.PARTICLE_PROP_COUNT, backgroundColor, particleProps, updateParticle])
 
-  const handleResize = () => {
+  const handleResize = useCallback(() => {
     const canvas = canvasRef.current
     const ctx = canvas?.getContext("2d")
     if (canvas && ctx) {
@@ -149,7 +149,7 @@ export const Vortex = ({
         initParticle(i, canvas)
       }
     }
-  }
+  }, [CONSTANTS.PARTICLE_PROP_COUNT, initParticle, particleProps.length])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -167,7 +167,7 @@ export const Vortex = ({
         }
       }
     }
-  }, [])
+  }, [draw, handleResize])
 
   return (
     <div className={cn("relative h-full w-full", containerClassName)}>
@@ -185,3 +185,6 @@ export const Vortex = ({
     </div>
   )
 }
+
+// Add display name
+Vortex.displayName = 'Vortex'
