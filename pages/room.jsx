@@ -35,6 +35,11 @@ const GalleryImage = memo(({ src, alt, inView }) => (
         sizes="(max-width: 768px) 100vw, 50vw"
         quality={75}
         loading="lazy"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-offset="0"
+        data-aos-duration="1000"
+        data-aos-delay="0"
       />
     )}
   </div>
