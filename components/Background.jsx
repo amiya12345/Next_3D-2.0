@@ -4,13 +4,13 @@ import { createNoise3D } from "simplex-noise"
 import { motion } from "framer-motion"
 
 export const Vortex = ({ 
-  particleCount = 700,
+  particleCount = 400,
   rangeY = 100,
   baseSpeed = 0.0,
-  rangeSpeed = 1.5,
+  rangeSpeed = 0.5,
   baseRadius = 1,
-  rangeRadius = 2,
-  baseHue = 220,
+  rangeRadius = 1.5,
+  baseHue = 210,
   backgroundColor = "#000000",
   containerClassName,
   className,
