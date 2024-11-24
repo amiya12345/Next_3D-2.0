@@ -19,15 +19,15 @@ const VORTEX_CONFIG = {
 
 const TYPED_STRINGS = ["Hello!", "Hola!", "Bonjour!", "Ciao!"];
 const TYPED_CONFIG = {
-  typeSpeed: 80,
-  backSpeed: 80,
+  typeSpeed: 100,
+  backSpeed: 100,
   loop: true
 };
 
 const GreetingText = memo(() => (
-  <p className="font-omiofont3 lg:text-[24px] text-[16px] mx-auto  text-slate-400 lg:tracking-[16px]">
+  <p className="font-omiofont3 whitespace-nowrap text-[3vw] tracking-[6px] sm:text-[2vw] sm:tracking-[8px] lg:text-2xl lg:tracking-[24px] text-nft">
     <Typed
-      className="font-omiofont3 lg:text-[24px] text-[16px] text-center mx-auto text-slate-400"
+      className="font-omiofont3 whitespace-nowrap text-[3vw] tracking-[6px] sm:text-[2vw] sm:tracking-[8px] lg:text-2xl lg:tracking-[24px] text-nft"
       strings={TYPED_STRINGS}
       {...TYPED_CONFIG}
     />
@@ -37,16 +37,16 @@ const GreetingText = memo(() => (
 GreetingText.displayName = 'GreetingText';
 
 const NameText = memo(() => (
-  <h1 className="font-omiofont3 text-6xl uppercase lg:text-6xl lg:tracking-[24px] text-center text-nft sm:text-4xl sm:tracking-[8px]">
-    Amiya Ranjan
-  </h1>
+  <h1 className="font-omiofont3 uppercase whitespace-nowrap text-[6vw] tracking-[6px] sm:text-[2vw] sm:tracking-[8px] lg:text-6xl lg:tracking-[24px] text-nft">
+  Amiya Ranjan
+</h1>
 ));
 NameText.displayName = 'NameText';
 
 const RoleText = memo(() => (
-  <p className="font-omiofont3 text-center lg:text-[18px] uppercase py-3 mx-auto  text-slate-400 lg:tracking-[16px] sm:text-[14px] sm:tracking-[8px]">
-    Designer | Developer | Creator
-  </p>
+  <p className="font-omiofont3 text-slate-400 uppercase tracking-[4px] text-[2vw] sm:text-[2vw] sm:tracking-[8px] lg:text-lg lg:tracking-[16px] py-2 whitespace-nowrap">
+  Designer | Developer | Creator
+</p>
 ));
 RoleText.displayName = 'RoleText';
 
